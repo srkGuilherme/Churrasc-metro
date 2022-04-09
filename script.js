@@ -33,6 +33,14 @@ function Calcular() {
   const quantidadeAdulto = adultos.value;
   const quantidadeCrianca = criancas.value;
 
+  const carneImage = document.getElementById("carne");
+  const BebidaImage = document.getElementById("bebida");
+  const CocaImage = document.getElementById("coca");
+
+  CocaImage.classList.remove("hideImg");
+  BebidaImage.classList.remove("hideImg");
+  carneImage.classList.remove("hideImg");
+
   let resultadoCarne =
     (carneDuracao(duracao) * quantidadeAdulto) / 1000 +
     (carneDuracao(duracao) * quantidadeCrianca * 0.5) / 1000;

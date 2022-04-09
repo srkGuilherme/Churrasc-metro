@@ -118,3 +118,6 @@ li {
 #resultado img {
   height: 30px;
 }
+.hideImg {
+  display: none;
+}
