@@ -1,38 +1,61 @@
 .App {
+  display: flex;
+  justify-content: center;
+}
+.Contentor {
+  height: 60%;
+  min-height: 700px;
+  width: 60%;
+  min-width: 700px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 16px 5px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0px 0px 16px 5px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 16px 5px rgba(0, 0, 0, 0.12);
+  display: flex;
+  overflow: hidden;
+}
+
+.Contentor div {
+  width: 50%;
+}
+
+.Image {
+  background-color: red;
+  box-shadow: inset rgba(0, 0, 0, 0.336) 0px 0px 100px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.InputDiv {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100% !important;
+  box-sizing: border-box;
+  align-items: center;
+}
+.InputDiv input {
+  padding: 5px;
+  width: 70px;
+}
+
+.InputImage {
+  height: 35px;
+}
+
+.Calculator {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Calculator button {
+  width: 60%;
+  padding: 5px;
+  border-radius: 5px;
+  border-style: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CalculatorResult {
+  width: 100% !important;
 }
