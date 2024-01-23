@@ -10,7 +10,7 @@ function Input(props) {
       ></img>
 
       <span>{props.description}</span>
-      <input type="number"></input>
+      <input type="number" placeholder={props.placeholder}></input>
     </div>
   );
 }
