@@ -26,17 +26,21 @@ function App() {
 
     const qtdTotalBebida = bebidaQuantity * duracaoEvento * adultosQuantity;
     const qtdTotalRefrigerante =
-      ((refrigeranteQuantity * duracaoEvento) / 2) * criancasQuantity;
+      refrigeranteQuantity * duracaoEvento * criancasQuantity;
 
-    setTotalCarne(qtdTotalCarne);
-    setTotalAcompanhamentos(qtdTotalAcompanhamentos);
-    setTotalBebida(qtdTotalBebida);
-    setTotalRefrigerante(qtdTotalRefrigerante);
-
-    console.log("Total de Carne: " + qtdTotalCarne);
-    console.log("Total de Acompanhamentos: " + totalAcompanhamentos);
-    console.log("Total de Bebida: " + totalBebida);
-    console.log("Total de Refrigerante: " + totalRefrigerante);
+    if (criancasQuantity === 0) {
+      console.log("sem crianças");
+      setTotalCarne(qtdTotalCarne);
+      setTotalAcompanhamentos(qtdTotalAcompanhamentos);
+      setTotalBebida(qtdTotalBebida);
+      setTotalRefrigerante(parseFloat(refrigeranteQuantity));
+    } else {
+      setTotalCarne(qtdTotalCarne);
+      setTotalAcompanhamentos(qtdTotalAcompanhamentos);
+      setTotalBebida(qtdTotalBebida);
+      setTotalRefrigerante(qtdTotalRefrigerante);
+      console.log("com crianças");
+    }
   };
 
   return (
