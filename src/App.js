@@ -16,8 +16,9 @@ function App() {
   const [totalRefrigerante, setTotalRefrigerante] = useState();
 
   const handleCalc = () => {
-    const qtdTotalCarne = carneQuantity * duracaoEvento * adultosQuantity; /* +
-      ((carneQuantity * duracaoEvento) / 2) * criancasQuantity; */
+    const qtdTotalCarne =
+      carneQuantity * duracaoEvento * adultosQuantity +
+      ((carneQuantity * duracaoEvento) / 2) * criancasQuantity;
 
     const qtdTotalAcompanhamentos =
       acompanhamentosQuantity * duracaoEvento * adultosQuantity +
@@ -32,10 +33,10 @@ function App() {
     setTotalBebida(qtdTotalBebida);
     setTotalRefrigerante(qtdTotalRefrigerante);
 
-    /*  console.log("Total de Carne: " + qtdTotalCarne);
+    console.log("Total de Carne: " + qtdTotalCarne);
     console.log("Total de Acompanhamentos: " + totalAcompanhamentos);
     console.log("Total de Bebida: " + totalBebida);
-    console.log("Total de Refrigerante: " + totalRefrigerante); */
+    console.log("Total de Refrigerante: " + totalRefrigerante);
   };
 
   return (
@@ -110,7 +111,7 @@ function App() {
             ></Input>
             <Input
               image="https://cdn-icons-png.flaticon.com/512/4305/4305432.png"
-              description="Duração do evento"
+              description="Duração"
               placeholder="1 hora"
               step={1}
               onChange={(event) => {
@@ -132,7 +133,21 @@ function App() {
             ></img>
           </button>
 
-          <div className="CalculatorResult"></div>
+          <div className="CalculatorResult">
+            <span>Resultado Total</span>
+            <br />
+            <strong>Carne: </strong>
+            {totalCarne.toFixed(1)} Kg
+            <br />
+            <strong>Acompanhamentos: </strong>
+            {totalAcompanhamentos.toFixed(1)} Kg
+            <br />
+            <strong>Bebida: </strong>
+            {totalBebida.toFixed(1)} Lts
+            <br />
+            <strong>Refrigerante: </strong>
+            {totalRefrigerante.toFixed(1)} Lts
+          </div>
         </div>
       </div>
     </div>

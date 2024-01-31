@@ -52,7 +52,7 @@
 }
 
 .InputDiv:hover {
-  padding: 20px;
+  padding: 0px 0px 0px 20px;
   transition: 0.1s;
 }
 
@@ -74,25 +74,21 @@
   border-radius: 10px;
   margin: auto;
   width: 90% !important;
+  -webkit-box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
 }
 .Calculator h2 {
   font-size: large;
   padding: 5px;
   margin: 0;
 }
-.perPersonSetup {
-  -webkit-box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
-}
+
 .QuantitySetup {
   padding: 10px;
   border-radius: 10px;
   margin: auto;
   width: 90% !important;
-}
-
-.QuantitySetup {
   -webkit-box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
@@ -140,5 +136,11 @@
 }
 
 .CalculatorResult {
-  width: 100% !important;
+  padding: 10px;
+  border-radius: 10px;
+  margin: auto;
+  width: 90% !important;
+  -webkit-box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
 }
