@@ -128,15 +128,10 @@
   border: none;
   background-color: rgb(255, 133, 34);
   cursor: pointer;
-}
-
-.CalcButton button {
-  font-family: "Rubik", sans-serif !important;
   font-size: medium;
-  background: none;
+  font-family: "Rubik", sans-serif !important;
   border-style: none;
   color: white;
-  cursor: pointer;
 }
 
 .CalcButtonImage {

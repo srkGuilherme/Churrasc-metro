@@ -10,7 +10,13 @@ function Input(props) {
       ></img>
 
       <span>{props.description}</span>
-      <input type="number" placeholder={props.placeholder}></input>
+      <input
+        min={0}
+        step={props.step}
+        type="number"
+        placeholder={props.placeholder}
+        onChange={props.onChange}
+      ></input>
     </div>
   );
 }
