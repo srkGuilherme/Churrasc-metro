@@ -32,10 +32,10 @@ function App() {
     setTotalBebida(qtdTotalBebida);
     setTotalRefrigerante(qtdTotalRefrigerante);
 
-    console.log("Total de Carne: " + qtdTotalCarne);
+    /*  console.log("Total de Carne: " + qtdTotalCarne);
     console.log("Total de Acompanhamentos: " + totalAcompanhamentos);
     console.log("Total de Bebida: " + totalBebida);
-    console.log("Total de Refrigerante: " + totalRefrigerante);
+    console.log("Total de Refrigerante: " + totalRefrigerante); */
   };
 
   return (
