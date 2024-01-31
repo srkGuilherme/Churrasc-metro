@@ -3,17 +3,17 @@ import "./App.css";
 import Input from "./components/Input";
 
 function App() {
-  const [carneQuantity, setCarneQuantity] = useState();
-  const [acompanhamentosQuantity, setAcompanhamentosQuantity] = useState();
-  const [bebidaQuantity, setBebidaQuantity] = useState();
-  const [refrigeranteQuantity, setRefrigeranteQuantity] = useState();
-  const [adultosQuantity, setAdultosQuantity] = useState();
-  const [criancasQuantity, setCriancasQuantity] = useState();
-  const [duracaoEvento, setDuracaoEvento] = useState();
-  const [totalCarne, setTotalCarne] = useState();
-  const [totalAcompanhamentos, setTotalAcompanhamentos] = useState();
-  const [totalBebida, setTotalBebida] = useState();
-  const [totalRefrigerante, setTotalRefrigerante] = useState();
+  const [carneQuantity, setCarneQuantity] = useState(0);
+  const [acompanhamentosQuantity, setAcompanhamentosQuantity] = useState(0);
+  const [bebidaQuantity, setBebidaQuantity] = useState(0);
+  const [refrigeranteQuantity, setRefrigeranteQuantity] = useState(0);
+  const [adultosQuantity, setAdultosQuantity] = useState(0);
+  const [criancasQuantity, setCriancasQuantity] = useState(0);
+  const [duracaoEvento, setDuracaoEvento] = useState(0);
+  const [totalCarne, setTotalCarne] = useState(0);
+  const [totalAcompanhamentos, setTotalAcompanhamentos] = useState(0);
+  const [totalBebida, setTotalBebida] = useState(0);
+  const [totalRefrigerante, setTotalRefrigerante] = useState(0);
 
   const handleCalc = () => {
     const qtdTotalCarne =
@@ -55,7 +55,7 @@ function App() {
             <Input
               image="https://cdn-icons-png.flaticon.com/512/1702/1702834.png"
               description="Carne"
-              placeholder="0,0 kg"
+              placeholder="Quilos"
               step={0.2}
               onChange={(event) => {
                 setCarneQuantity(event.target.value);
@@ -64,7 +64,7 @@ function App() {
             <Input
               image="https://cdn-icons-png.flaticon.com/512/2515/2515189.png"
               description="Acompanhamentos"
-              placeholder="1 prato"
+              placeholder="Quilos"
               step={0.2}
               onChange={(event) => {
                 setAcompanhamentosQuantity(event.target.value);
@@ -73,7 +73,7 @@ function App() {
             <Input
               image="https://static.vecteezy.com/system/resources/previews/018/931/336/original/cartoon-beer-icon-png.png"
               description="Bebida"
-              placeholder="1 litro"
+              placeholder="Litros"
               step={1}
               onChange={(event) => {
                 setBebidaQuantity(event.target.value);
@@ -82,7 +82,7 @@ function App() {
             <Input
               image="https://cdn-icons-png.flaticon.com/512/3076/3076143.png"
               description="Refrigerante"
-              placeholder="1 litro"
+              placeholder="Litros"
               step={0.5}
               onChange={(event) => {
                 setRefrigeranteQuantity(event.target.value);
@@ -94,7 +94,7 @@ function App() {
             <Input
               image="https://cdn-icons-png.flaticon.com/512/3224/3224634.png"
               description="Adultos"
-              placeholder="1 adultos"
+              placeholder="Adultos"
               step={1}
               onChange={(event) => {
                 setAdultosQuantity(event.target.value);
@@ -103,7 +103,7 @@ function App() {
             <Input
               image="https://cdn-icons-png.flaticon.com/512/547/547464.png"
               description="Crianças"
-              placeholder="1 criança"
+              placeholder="Crianças"
               step={1}
               onChange={(event) => {
                 setCriancasQuantity(event.target.value);
@@ -112,7 +112,7 @@ function App() {
             <Input
               image="https://cdn-icons-png.flaticon.com/512/4305/4305432.png"
               description="Duração"
-              placeholder="1 hora"
+              placeholder="Horas"
               step={1}
               onChange={(event) => {
                 setDuracaoEvento(event.target.value);
